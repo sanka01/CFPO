@@ -28,6 +28,7 @@ class CitacaoAdapter(private val context: Context, private var citacaoList: Muta
 
         fun bindView(citacao: Citacao) {
             textViewNome.text = citacao.nome
+            textViewCitacao.text = citacao.citacao
 
 
 

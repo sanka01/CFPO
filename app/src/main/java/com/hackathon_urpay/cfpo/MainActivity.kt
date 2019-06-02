@@ -5,21 +5,16 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val CitacaoList: MutableList<Citacao> = mutableListOf(
-          Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
-        , Citacao("Cleito Rasta","melhorquealok")
+          Citacao("Thomas Edison","Eu não falhei. Eu apenas encontrei 10 mil soluções que não deram certo")
+        , Citacao("Gandhi , Indira","Nenhum bom empreendedor deveria desejar sacrificar os rendimentos a longo prazo devido para que tenha maiores lucros a curto prazo.")
+        , Citacao("Dell , Michael","Os empreendedores reais têm o que eu chamo de três Ps (e, acreditem-me, nenhum deles significa 'permissão'). Os empreendedores reais têm uma 'paixão' por aquilo que estão a fazer, um 'problema' que precisa de ser resolvido, e um 'propósito' que os impulsiona para a frente.")
+        , Citacao("Robert Kiyosaki","Os pobres e a classe média trabalham pelo dinheiro. Os ricos fazem o dinheiro trabalhar para eles.")
+        , Citacao("Robert Kiyosaki","Gente demais se preocupa excessivamente com dinheiro e não com sua maior riqueza, a educação.")
     )
 
     lateinit var CitacaoAdapter: CitacaoAdapter
