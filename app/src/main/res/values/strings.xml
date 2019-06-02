@@ -4,4 +4,9 @@
     <string name="finan_as">Finanças</string>
     <string name="dicas_financeiras">Dicas Financeiras</string>
     <string name="fluxo_de_consumo">Fluxo de Consumo</string>
+    <array name="metodos">
+    <item>Selecione o Método Principal de pagamento</item>
+        <item>Débito</item>
+        <item>Crédito</item>
+    </array>
 </resources>
