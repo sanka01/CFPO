@@ -8,4 +8,5 @@
     <item android:title="@string/dicas_financeiras" android:id="@+id/dicas_financeiras">
     </item>
     <item android:title="@string/fluxo_de_consumo" android:id="@+id/fluxo_consumo"/>
+    <item android:title="Modelagem" android:id="@+id/modelagem"/>
 </menu>

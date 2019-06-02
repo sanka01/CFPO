@@ -57,7 +57,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(trocaTela)
                 return true
             }
-
+            R.id.modelagem->{
+                val trocaTela = Intent(this.baseContext, Modelagem::class.java)
+                startActivity(trocaTela)
+                return true
+            }
             else -> {
                 return false
             }
