@@ -1,13 +1,17 @@
 package com.hackathon_urpay.cfpo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener  {
 
     val CitacaoList: MutableList<Citacao> = mutableListOf(
           Citacao("Thomas Edison","Eu não falhei. Eu apenas encontrei 10 mil soluções que não deram certo")
@@ -42,10 +46,43 @@ class MainActivity : AppCompatActivity() {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-//        return when (item.itemId) {
-//            R.id.action_settings -> true
-//            else -> super.onOptionsItemSelected(item)
-//        }
-        return false
+        return when (item.itemId) {
+            R.id.objetivo -> {
+                val trocaTela = Intent(this.baseContext, ObjetivoActivity::class.java)
+                startActivity(trocaTela)
+                return true
+            }
+            R.id.financas -> {
+                val trocaTela = Intent(this.baseContext, ObjetivoActivity::class.java)
+                startActivity(trocaTela)
+                return true
+            }
+
+            else -> {
+                return false
+            }
+        }
+//        return false
+    }
+
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        // Handle navigation view item clicks here.
+        when (item.itemId) {
+
+            R.id.financas_menu_lateral -> {
+                val trocaTela = Intent(this.baseContext, RelatorioActivity::class.java)
+                startActivity(trocaTela)
+            }
+            R.id.objetivo_menu_lateral-> {
+                val trocaTela = Intent(this.baseContext, ObjetivoActivity::class.java)
+                startActivity(trocaTela)
+            }
+
+
+        }
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        drawerLayout.closeDrawer(GravityCompat.START)
+        return true
     }
 }

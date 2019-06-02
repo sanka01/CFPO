@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <item android:title="@string/objetivos" android:id="@+id/objetivo"/>
+    <item android:title="@string/finan_as" android:id="@+id/financas"/>
+    <item android:title="@string/dicas_financeiras" android:id="@+id/dicas_financeiras">
+    </item>
+    <item android:title="@string/fluxo_de_consumo" android:id="@+id/fluxo_consumo"/>
 </menu>

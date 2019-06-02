@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CFPO</string>
+    <string name="objetivos">Objetivos</string>
+    <string name="finan_as">Finanças</string>
+    <string name="dicas_financeiras">Dicas Financeiras</string>
+    <string name="fluxo_de_consumo">Fluxo de Consumo</string>
 </resources>
